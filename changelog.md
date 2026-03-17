@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.0 (2026-03-17)
+- **Bugfix (Restaurant Content Manager)**: Fehler beim Speichern von extrahiertem Text behoben - die Update-Funktion erwartet nun korrekt die Datenstruktur mit verschachteltem `input`-Objekt.
+- **Verbesserung (Code-Qualität)**: TypeScript-Typsicherheit im Content-Update-Flow verbessert.
+
 ## 0.7.4 (2026-03-09)
 - **Bugfix (Lernzeit-Tracking)**: Race Condition beim Speichern der Lernzeit behoben - keine Duplicate Key Errors mehr bei parallelen Speichervorgängen.
 - **Verbesserung (Performance)**: UPSERT statt SELECT + INSERT/UPDATE für atomare Datenbankoperationen und bessere Konsistenz.
