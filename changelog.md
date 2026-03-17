@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0 (2026-03-17)
+- **Neue Funktion (OCR-Korrektur)**: Interaktive Zoom-Funktion für OCR-Bilder - bis zu 225% Zoom mit Click-to-Zoom an beliebiger Stelle.
+- **Neue Funktion (OCR-Korrektur)**: Drag-to-Pan bei maximaler Zoom-Stufe - Bild kann durch Ziehen verschoben werden, um alle Details zu sehen.
+- **Verbesserung (OCR)**: OCR-Texterkennung gibt jetzt den Text exakt wie erkannt zurück, ohne automatische Korrekturen - ermöglicht präzisere manuelle Nachbearbeitung.
+- **Verbesserung (Bild-Upload)**: OCR-Dialog wird jetzt auch nach Kamera-Upload automatisch angezeigt - nahtloser Workflow für Foto → Upload → OCR → Korrektur.
+- **UX-Verbesserung**: Reset-Button zum Zurücksetzen des Zooms, klare Hinweise bei maximaler Zoom-Stufe, Text bleibt während Zoom editierbar.
+
 ## 0.8.0 (2026-03-17)
 - **Bugfix (Restaurant Content Manager)**: Fehler beim Speichern von extrahiertem Text behoben - die Update-Funktion erwartet nun korrekt die Datenstruktur mit verschachteltem `input`-Objekt.
 - **Verbesserung (Code-Qualität)**: TypeScript-Typsicherheit im Content-Update-Flow verbessert.
