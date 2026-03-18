@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.1 (2026-03-18)
+- **Verbesserung (Restaurant-Verwaltung)**: Speichern-Button beim Zuordnen von Lernkarten ist jetzt immer sichtbar - bleibt oben im Sticky Header, auch bei vielen Karten.
+- **Bugfix (Restaurant-Verwaltung)**: Karten werden jetzt auch ohne Tag-Filter geladen - beim Öffnen des Zuordnungsmodus werden automatisch alle verfügbaren Karten angezeigt.
+- **UX-Verbesserung (Restaurant-Verwaltung)**: Filter werden beim Öffnen des Zuordnungsmodus zurückgesetzt - sofortiges Laden aller Karten ohne Verzögerung.
+- **UX-Verbesserung (Restaurant-Verwaltung)**: "Alle auswählen"-Button ist jetzt immer sichtbar, nicht nur bei Tag-Filter - schnellere Mehrfachauswahl möglich.
+
 ## 0.9.0 (2026-03-17)
 - **Neue Funktion (OCR-Korrektur)**: Interaktive Zoom-Funktion für OCR-Bilder - bis zu 225% Zoom mit Click-to-Zoom an beliebiger Stelle.
 - **Neue Funktion (OCR-Korrektur)**: Drag-to-Pan bei maximaler Zoom-Stufe - Bild kann durch Ziehen verschoben werden, um alle Details zu sehen.
