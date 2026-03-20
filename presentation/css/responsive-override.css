@@ -1,0 +1,84 @@
+/* Responsive Override für Obsidian/Reveal.js Präsentation */
+/* Zweck: Scrollbare Slides damit Text nicht abgeschnitten wird */
+/* Version: 3.2 - Scrollable Content */
+
+/* Slides scrollbar machen */
+.reveal .slides > section {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+/* Content Container - überschreibe absolute Positionierung */
+.reveal .slides > section > div {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  height: auto !important;
+  min-height: 100% !important;
+  width: 100% !important;
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* Bilder größer und zentriert */
+.reveal section img {
+  max-width: 95% !important;
+  max-height: 65vh !important;
+  object-fit: contain !important;
+  margin: 0.5rem auto !important;
+}
+
+/* Text kompakt */
+.reveal section h1 {
+  font-size: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.2 !important;
+  width: 100% !important;
+}
+
+.reveal section p {
+  font-size: 0.95rem !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.4 !important;
+  width: 100% !important;
+}
+
+/* Mobile Optimierungen */
+@media (max-width: 768px) {
+  .reveal section img {
+    max-height: 50vh !important;
+  }
+  
+  .reveal section h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .reveal section p {
+    font-size: 0.9rem !important;
+  }
+  
+  .reveal .slides > section > div {
+    padding: 1rem !important;
+  }
+}
+
+/* Tablet Optimierungen */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .reveal img {
+    max-height: 55vh !important;
+  }
+}
+
+/* Desktop Optimierungen */
+@media (min-width: 1025px) {
+  .reveal img {
+    max-height: 65vh !important;
+  }
+}
