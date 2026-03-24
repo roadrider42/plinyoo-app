@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.8 (2026-03-24)
+- **Neue Funktion (Quellen-Management)**: Dokument-Upload mit manueller OCR-Steuerung - Upload → Speichern → OCR-Button → Korrektur → Lernkarten generieren.
+- **Verbesserung (Quellen-Management)**: Klare Schritt-für-Schritt-Anleitung im Upload-Dialog für bessere UX.
+- **Verbesserung (Quellen-Management)**: Hochgeladene Dokumente werden immer angezeigt, auch wenn Liste leer ist.
+- **Bugfix (RLS-Policies)**: Quellen-Tabelle unterstützt jetzt korrekt die Rollen `content_creator` und `restaurant_betreiber`.
+- **Refactoring (Auth)**: Legacy AuthContext entfernt - einheitliche Verwendung von `@/hooks/hook-useAuth` im gesamten Projekt.
+- **Bugfix (Import-Pfade)**: Alle Auth-Imports auf zentralen Hook vereinheitlicht - keine 404-Fehler mehr.
+
 ## 0.9.1 (2026-03-18)
 - **Verbesserung (Restaurant-Verwaltung)**: Speichern-Button beim Zuordnen von Lernkarten ist jetzt immer sichtbar - bleibt oben im Sticky Header, auch bei vielen Karten.
 - **Bugfix (Restaurant-Verwaltung)**: Karten werden jetzt auch ohne Tag-Filter geladen - beim Öffnen des Zuordnungsmodus werden automatisch alle verfügbaren Karten angezeigt.
